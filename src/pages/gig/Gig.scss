@@ -1,0 +1,274 @@
+.gig{
+    display: flex;
+    justify-content: center;
+
+        .container {
+            width: 1400px;
+            padding: 30px 0px;
+            display: flex;
+            gap: 50px;
+    
+                .left {
+                flex:2;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                    .breadCrubs{
+                        font-weight: 300px;
+                        font-size: 15px;
+                        color:#555;
+                    }
+
+                    h1{
+                        font-size: 18px;
+                    }
+
+                    .user{
+                        display:flex;
+                        align-items: center;
+                        gap:10px;
+
+                        //kirparticonözellik
+                        .pp{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                        }
+                        //Patent Durumu
+                        // span {
+                        //     font-size: 14px;
+                        //     font-weight: 500;
+
+                         .durum {
+                            font-size: 14px;
+                            font-weight: 500;
+
+                            &.durumtescilrenk{
+                                color:#04a22b;
+                            }
+                            &.durumbasvururenk{
+                                color:#ffd500;
+                            }
+
+
+                        }
+
+                        .stars{
+                            display: flex;
+                            align-items: center;
+                            gap:5px;
+
+                                img{
+                                    width: 14px;
+                                    height: 14px;
+                                }
+
+                                span{
+                                    font-size: 14px;
+                                    font-weight: bold;
+                                    color:#c80007;
+                                }
+                        }
+                    }
+
+                    .slider{
+                        
+                        img{
+                            max-height: 500px;
+                            object-fit: contain;
+                           
+                        }
+                    }
+
+                    .icerik{  
+                               
+                        .ozet{
+                            margin-bottom: 20px;
+                            h2{
+                                font-size: 20px;
+                                font-weight: 400; 
+                                color: #c80007;                      
+                            }
+        
+                            p{
+                                font-weight: 500;
+                                color: #555;
+                                line-height: 25px;
+                            }
+    
+                            hr{
+                                height: 0;
+                                border: 1px solid lightgray;
+                                margin-bottom: 20px;
+                            }
+                        }
+
+                        .istemler{
+                            margin-bottom: 20px;
+                            h2{
+                                font-size: 20px;
+                                font-weight: 400;
+                                color: rgb(17, 167, 50);                        
+                            }
+        
+                            p{
+                                font-weight: 500;
+                                color: #555;
+                                line-height: 25px;
+                            }
+    
+                            hr{
+                                height: 0;
+                                border: 1px solid lightgray;
+                                margin-bottom: 20px;
+                            }
+                        }
+
+                        .tarifname{
+                            margin-bottom: 10px;
+                            h2{
+                                font-size: 20px;
+                                font-weight: 400;
+                                color: rgb(0, 101, 168);    
+
+                            }
+        
+                            p{
+                                font-weight: 500;
+                                color: #555;
+                                line-height: 25px;
+                            }
+    
+                            hr{
+                                height: 0;
+                                border: 1px solid lightgray;
+                                margin-bottom: 20px;
+                            }
+                        }
+                        
+                    }
+
+
+                    
+
+                    .box{
+                        border: 1px solid lightgray;
+                        border-radius: 5px;
+                        padding: 20px;
+                        margin-top: 20px;
+
+                            .items{
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+
+                                    .item{
+                                        width: 300px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 10px;
+                                        margin-bottom: 20px;
+
+                                        .title{
+                                            font-weight: 300;
+                                        }
+                                    }
+                            }
+
+                            hr{
+                                height: 0;
+                                border: 1px solid lightgray;
+                                margin-bottom: 20px;
+                            }
+                    }
+                }
+
+               
+                .right {
+                    flex: 1;
+                    border: 1px solid lightgray;
+                    padding: 20px;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    height: max-content;
+                    max-height: 800px;
+                    position: sticky;
+                    top: 150px;
+
+                        .file {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                                //İndir
+                                h2{
+                                    font-size: 15px;
+                                    font-weight: 300;
+                                    cursor: pointer;
+                                    
+                                }
+                                //Patent Dökümanı
+                                h3{
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                  }
+                                .button {
+                                    background: #1dbf73;
+                                    border: 1px solid transparent;
+                                    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+                                    color: #fff;
+                                    font-size: 16px;
+                                    padding: 5px 50px;
+                                    bottom: 15px;
+                                    right: 30px;
+                                    letter-spacing: 1px;
+                                    cursor: pointer;
+                                    transition: all .4s ease-in-out;
+                                    font-weight: bold;
+                                    border-radius: 20px;
+                                }
+                                .button:hover {
+                                    background: #fff;
+                                    color: #1dbf73;
+                                    border: 1px solid #1dbf73;
+                                    transform: scale(1.05);
+                                  }
+                                
+
+
+                        }
+                        hr {
+                            height: 0;
+                            border: 1px solid lightgray;
+                            margin-bottom: 10px;
+                        }
+
+                        .items{
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                                .item {
+                                        width: 200px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 5px;
+                                        margin-bottom: 10px;
+                                        justify-content: space-between;
+
+                                        .title{
+                                            font-weight: 300;
+                                        }
+                                }
+                            }
+
+                            p {
+                                font-weight: 500;
+                                color: #555;
+                                line-height: 25px;
+                            }
+
+                }
+        }
+    }

@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+/*   color variables */
+$clr-primary: #0e48fe;
+$clr-primary-hover: #29e6a7;
+$clr-primary-dark: #039d69;
+$clr-gray100: #f9fbff;
+$clr-gray150: #f4f6fb;
+$clr-gray200: #eef1f6;
+$clr-gray300: #e1e5ee;
+$clr-gray400: #767b91;
+$clr-gray500: #4f546c;
+$clr-gray600: #2a324b;
+$clr-gray700: #161d34;
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.course {
+  margin: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px
+  rgba(0,0,0,.2);
+  display: flex;
+  max-width: 100%;
+  overflow: hidden;
+  
+}
+
+
+
+.img_one {
+  height: 16rem;
+  width: 100%;
+  padding: 2px;
+  border-radius: 10px;
+  
+}
+
+.img_two {
+  height: 16rem;
+  width: 100%;
+  padding: 2px;
+  border-radius: 20px;
+}
+
+.course h5 {
+  opacity: .6;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+.course h3 {
+  opacity: .6;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.course h2 {
+  font-size: large;
+  letter-spacing: 1px;
+  margin: 10px 0;
+
+}
+
+// Sol Bölüm 
+.preview {
+  background:#fff ;
+  //color: #fff;
+  padding: 10px;
+  width: 600px;
+  position: relative;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.preview a {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+// Sağ bölüm
+.info {
+  padding: 30px;
+  position: relative;
+  width: 100%;
+}
+
+//Çizgi
+.progress-wrapper {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  text-align: right;
+  width: 150px;
+}
+
+.progress {
+  background: #ddd;
+  border-radius: 3px;
+  height: 5px;
+  width: 100%;
+
+  &.tescilli::after{
+    content: '';
+      border-radius: 3px;
+      background: #04a22b;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 5px;
+      width: 100%;
+  }
+
+  
+  &.basvuru::after{
+    content: '';
+      border-radius: 3px;
+      background: #ffd500;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 5px;
+      width: 65%;
+  }
+}
+
+// .progress::after{
+//   content: '';
+//   border-radius: 3px;
+//   background: #e40046;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   height: 5px;
+//   width: 36%;
+// }
+
+
+.progress-text {
+ 
+  display: flex;
+  font-size: 10px;
+  opacity: .6;
+  letter-spacing: 1px;
+  
+}
+
+.info p {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.btn {
+  background: #e40046;
+  border: 1px solid transparent;
+  box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  position: absolute;
+ 
+  bottom: 15px;
+  right: 30px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+  font-weight: bold;
+  border-radius: 20px;
+
+}
+
+.btn:hover {
+  background: #fff;
+  color: #e40046;
+  border: 1px solid #e40046;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .course {
+    flex-direction: column;
+    width: 90%;
+  }
+  .preview {
+    width: 100%;
+  }
+  .preview h2 {
+    margin: 10px 0 0;
+  }
+  .preview a {
+    margin-top: 10px;
+  }
+  .info h2 {
+    margin-top: 20px;
+
+  }
+  .info p {
+    margin-bottom: 50px;
+  }
+
+  .btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .img_one{
+    height: 16rem;
+    width: 100%;
+    padding: 2px;
+   
+  }
+
+  .img_two{
+    height: 16rem;
+    width: 100%;
+      padding: 2px;
+   
+  }
+}
